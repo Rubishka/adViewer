@@ -1,0 +1,23 @@
+<div ng-controller="ADsController">
+<div class="search ads">
+    <div class="container">
+        <header>
+            <h3>Search Ads</h3>
+        </header>
+        <div class="row">
+            <div class="span3">
+                Name:
+                <br />
+                <input data-ng-model="search.adsName" type="text" placeholder="AD name">
+            </div>
+
+
+                <button id="searchAds" class="btn btn-primary" type="button"
+                        data-ng-disabled="!search.adsName"
+                        data-ng-click="init()">Search Ads</button>
+            </div>
+        </div>
+        <br /><br />
+        </div>
+    </div>
+</div>

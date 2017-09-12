@@ -1,0 +1,49 @@
+﻿body {
+    margin-left:25px;
+}
+
+.section {
+    background-color: #efefef;
+    height:800px;
+}
+.container {
+    width: 99%;
+    margin-left:10px;
+    margin-top: -15px;
+}
+textarea {
+    width: 99%;
+    height: 400px;
+    border: 0px;
+    background: transparent;
+    -webkit-box-shadow: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px 0px;
+    font-size: 11pt;
+    font-weight:bold;
+}
+
+aside section {
+    margin: 22px 0 0 22px;
+    padding: 11px 22px;
+    background: url("images/sidebar_section_background.png") repeat-x;
+
+    /* Border-radius not implemented yet */
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+}
+
+aside section ul {
+    margin: 0 0 0 22px;
+    list-style: none;
+}
+
+aside section ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+aside section ul li a:hover {
+    text-decoration: underline;
+}
+

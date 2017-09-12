@@ -1,0 +1,61 @@
+<div ng-controller="ADsController">
+<div class="customers view">
+    <div class="container">
+        <header>
+            <h3>Customers</h3>
+        </header>
+        <div class="row">
+            <div class="span3">
+                link:
+                <br />
+                <input data-ng-model="newAD.templateLink" type="text" placeholder="templateLink">
+            </div>
+            <div class="span3">
+                Name:
+                <br />
+                <input data-ng-model="newAD.adsName" type="text" placeholder="AD name">
+            </div>
+            <div class="span3">
+                line:
+                <br />
+                <input data-ng-model="newAD.AddLine" type="text" placeholder="AD line">
+            </div>
+            <div class="span3">
+                day:
+                <br />
+                <input data-ng-model="newAD.day" type="text" placeholder="AD day">
+            </div>
+            <div class="span3">
+                fromHour:
+                <br />
+                <input data-ng-model="newAD.fromHour" type="text" placeholder="AD fromHour">
+            </div>
+            <div class="span3">
+                toHour:
+                <br />
+                <input data-ng-model="newAD.toHour" type="text" placeholder="AD toHour">
+            </div>
+            <div class="span3">
+                fromDate:
+                <br />
+                <input data-ng-model="newAD.fromDate" type="text" placeholder="AD fromDate">
+            </div>
+            <div class="span3">
+                toDate:
+                <br />
+                <input data-ng-model="newAD.toDate" type="text" placeholder="AD toDate">
+            </div>
+            <div class="span6">
+                screen:
+                <br />
+                <input data-ng-model="newAD.screen" type="text" placeholder="screen">
+
+                <button id="submitCustomer" class="btn btn-primary" type="button"
+                        data-ng-disabled="!newAD.templateLink || !newAD.adsName || !newAD.AddLine|| !newAD.day|| !newAD.fromHour||!newAD.toHour ||!newAD.fromDate ||!newAD.toDate || !newAD.screen"
+                        data-ng-click="insertAD()">Insert AD</button>
+            </div>
+        </div>
+        <br /><br />
+        </div>
+    </div>
+</div>

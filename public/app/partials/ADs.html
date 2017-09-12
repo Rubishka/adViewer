@@ -1,0 +1,37 @@
+<div ng-controller="ADsController">
+
+    <div class="customers view">
+        <div class="container">
+        <header>
+            <h3>Search ads</h3>
+        </header>
+
+            <div class="row">
+                <div class="span3">
+                    Name:
+                    <br />
+                    <input data-ng-model="search.adsName" type="text" placeholder="Ad name">
+                </div>
+                <div class="span3">
+                Template:
+                <br />
+                <input data-ng-model="search.templateLink" type="text" placeholder="templateLink">
+            </div>
+                <button id="searchAds" class="btn btn-primary" type="button"
+                        data-ng-disabled="!search.adsName"
+                        data-ng-disabled="!search.templateLink"
+                        data-ng-click="init2()">Search Ads</button>
+            </div>
+
+            <h3>View ads</h3>
+            <div class="row cardContainer">
+                <div class="span3 card" ng-repeat="ad in ads | orderBy:'adsName'">
+                    <button class="btn close cardClose" data-ng-click="deleteAD(ad.adsID)">&times;</button>
+                    <div class="cardHeader">{{ad.adsName}}</div>
+                    <div class="cardBody">{{ad.templateLink}} <span ng-repeat="line in ad.lines"> <br><br/>{{line}}</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+
+
+<div ng-controller="statsController">
+
+    <div class="stats view">
+        <div class="container">
+            <header>
+                <h3>ADs statistics</h3>
+            </header>
+            <script src="http://d3js.org/d3.v3.min.js"></script>
+            <div id = "svgContent"></div>
+
+
+            <div>
+                <div class="row cardContainer" ng ng-repeat="i in adStats track by $index">
+                   {{i}}
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
